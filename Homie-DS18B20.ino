@@ -44,7 +44,7 @@ void onHomieEvent(HomieEvent event) {
 void setup() {
   Serial.begin(115200);
   DS18B20.begin();
-  Homie_setFirmware("Sonoff-DS18B20", "0.0.1");
+  Homie_setFirmware("DS18B20", "0.0.1");
   Homie.disableLedFeedback();
   Homie.setLoopFunction(loopHandler);
   Homie.onEvent(onHomieEvent);
